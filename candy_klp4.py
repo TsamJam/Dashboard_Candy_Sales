@@ -586,15 +586,7 @@ with tab6:
     """, unsafe_allow_html=True)
 
     st.markdown("---")
-    st.subheader("Scatter: Distance vs Margin")
-    sample = fdf.dropna(subset=['Distance']).sample(min(2000, len(fdf)), random_state=42)
-    fig_sc = px.scatter(sample, x='Distance', y='Margin',
-                        color='Division', opacity=0.5,
-                        hover_data=['Product Name', 'Factory'],
-                        title="Apakah jarak ngaruh ke margin?")
-    fig_sc.update_layout(height=450)
-    st.plotly_chart(fig_sc, use_container_width=True)
-
+    
 
 # ============================================================
 # FOOTER
