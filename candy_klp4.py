@@ -45,7 +45,7 @@ st.markdown("""
 # DATA LOADING - mengikuti alur notebook
 # ============================================================
 @st.cache_data
-def load_data(data_dir="C:/Users/abdil/Downloads/US+Candy+Distributor (case 4)"):
+def load_data(data_dir="data"):
     factories_df = pd.read_csv(f"{data_dir}/Candy_Factories.csv")
     products_df  = pd.read_csv(f"{data_dir}/Candy_Products.csv")
     sales_df     = pd.read_csv(f"{data_dir}/Candy_Sales.csv")
